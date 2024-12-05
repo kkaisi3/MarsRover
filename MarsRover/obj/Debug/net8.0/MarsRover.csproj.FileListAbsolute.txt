@@ -34,3 +34,4 @@ C:\Users\User\source\repos\MarsRover\MarsRover\obj\Debug\net8.0\refint\MarsRover
 C:\Users\User\source\repos\MarsRover\MarsRover\obj\Debug\net8.0\MarsRover.pdb
 C:\Users\User\source\repos\MarsRover\MarsRover\obj\Debug\net8.0\MarsRover.genruntimeconfig.cache
 C:\Users\User\source\repos\MarsRover\MarsRover\obj\Debug\net8.0\ref\MarsRover.dll
+C:\Users\User\source\repos\MarsRover\MarsRover\obj\Debug\net8.0\MarsRover.sourcelink.json
