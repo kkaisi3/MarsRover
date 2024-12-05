@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\MarsRover\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86C81F4F-28E5-416C-8369-755E706BB6D9}|MarsRover\\MarsRover.csproj|c:\\users\\user\\source\\repos\\marsrover\\marsrover\\plateausize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C81F4F-28E5-416C-8369-755E706BB6D9}|MarsRover\\MarsRover.csproj|solutionrelative:marsrover\\plateausize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C81F4F-28E5-416C-8369-755E706BB6D9}|MarsRover\\MarsRover.csproj|c:\\users\\user\\source\\repos\\marsrover\\marsrover\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C81F4F-28E5-416C-8369-755E706BB6D9}|MarsRover\\MarsRover.csproj|solutionrelative:marsrover\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C81F4F-28E5-416C-8369-755E706BB6D9}|MarsRover\\MarsRover.csproj|c:\\users\\user\\source\\repos\\marsrover\\marsrover\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C81F4F-28E5-416C-8369-755E706BB6D9}|MarsRover\\MarsRover.csproj|solutionrelative:marsrover\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C81F4F-28E5-416C-8369-755E706BB6D9}|MarsRover\\MarsRover.csproj|c:\\users\\user\\source\\repos\\marsrover\\marsrover\\directionsenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C81F4F-28E5-416C-8369-755E706BB6D9}|MarsRover\\MarsRover.csproj|solutionrelative:marsrover\\directionsenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B4204AC-3046-4ACC-93D9-B6C54DC38DA8}|MarsRoverTests\\MarsRoverTests.csproj|c:\\users\\user\\source\\repos\\marsrover\\marsrovertests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B4204AC-3046-4ACC-93D9-B6C54DC38DA8}|MarsRoverTests\\MarsRoverTests.csproj|solutionrelative:marsrovertests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlateauSize.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRover\\PlateauSize.cs",
+              "RelativeDocumentMoniker": "MarsRover\\PlateauSize.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRover\\PlateauSize.cs",
+              "RelativeToolTip": "MarsRover\\PlateauSize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T10:30:36.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Position.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRover\\Position.cs",
+              "RelativeDocumentMoniker": "MarsRover\\Position.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRover\\Position.cs",
+              "RelativeToolTip": "MarsRover\\Position.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T10:26:30.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DirectionsEnum.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRover\\DirectionsEnum.cs",
+              "RelativeDocumentMoniker": "MarsRover\\DirectionsEnum.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRover\\DirectionsEnum.cs",
+              "RelativeToolTip": "MarsRover\\DirectionsEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T10:20:24.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRoverTests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "MarsRoverTests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRoverTests\\UnitTest1.cs",
+              "RelativeToolTip": "MarsRoverTests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T10:16:29.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRover\\Program.cs",
+              "RelativeDocumentMoniker": "MarsRover\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MarsRover\\MarsRover\\Program.cs",
+              "RelativeToolTip": "MarsRover\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T10:12:13.703Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
