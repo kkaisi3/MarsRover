@@ -15,7 +15,7 @@ namespace MarsRoverTests
         [Test]
         public void TestRotateLeft()
         {
-            Rover rover = new Rover(0, 0, CompassDirection.N);
+            Rover rover = new Rover(0, 0, CompassDirection.N, new PlateauSize(5,5));
             rover.RotateLeft();
             rover.Position.Facing.Should().Be(CompassDirection.W);
 
@@ -26,7 +26,7 @@ namespace MarsRoverTests
         [Test]
         public void TestRotateRight()
         {
-            Rover rover = new Rover(0, 0, CompassDirection.N);
+            Rover rover = new Rover(0, 0, CompassDirection.N, new PlateauSize(5, 5));
             rover.RotateRight();
             rover.Position.Facing.Should().Be(CompassDirection.E);
 
@@ -35,7 +35,7 @@ namespace MarsRoverTests
         [Test]
         public void TestRotateUsingBoth()
         {
-            Rover rover = new Rover(0, 0, CompassDirection.N);
+            Rover rover = new Rover(0, 0, CompassDirection.N , new PlateauSize(5, 5));
             rover.RotateLeft();
             rover.RotateLeft();
             rover.RotateRight();
@@ -48,7 +48,7 @@ namespace MarsRoverTests
         [Test]
         public void TestMoveFacingNorth()
         {
-            Rover rover = new Rover(0, 0, CompassDirection.N);
+            Rover rover = new Rover(0, 0, CompassDirection.N , new PlateauSize(5, 5));
             rover.Move();
 
             rover.Position.X.Should().Be(0);
@@ -60,11 +60,11 @@ namespace MarsRoverTests
         [Test]
         public void TestMoveFacingSouth()
         {
-            Rover rover = new Rover(0, 0, CompassDirection.S);
+            Rover rover = new Rover(0, 1, CompassDirection.S , new PlateauSize(5, 5));
             rover.Move();
 
             rover.Position.X.Should().Be(0);
-            rover.Position.Y.Should().Be(-1);
+            rover.Position.Y.Should().Be(0);
 
 
         }
@@ -72,10 +72,10 @@ namespace MarsRoverTests
         [Test]
         public void TestMoveFacingWest()
         {
-            Rover rover = new Rover(0, 0, CompassDirection.W);
+            Rover rover = new Rover(1, 0, CompassDirection.W, new PlateauSize(5, 5));
             rover.Move();
 
-            rover.Position.X.Should().Be(-1);
+            rover.Position.X.Should().Be(0);
             rover.Position.Y.Should().Be(0);
 
 
@@ -84,21 +84,39 @@ namespace MarsRoverTests
         [Test]
         public void TestMoveFacingEast()
         {
-            Rover rover = new Rover(0, 0, CompassDirection.E);
+            Rover rover = new Rover(0, 0, CompassDirection.E , new PlateauSize(5, 5));
             rover.Move();
 
             rover.Position.X.Should().Be(1);
             rover.Position.Y.Should().Be(0);
-
-
         }
 
-        // Test Rotate Method
+        //Test Plateau
+        [Test]
+        public void TestMovePastThePlateau()
+        {
+            Rover rover = new Rover(5, 5, CompassDirection.N, new PlateauSize(5, 5));
+            rover.Move();
+
+            rover.Position.X.Should().Be(5);
+            rover.Position.Y.Should().Be(5);
+        }
+        [Test]
+        public void TestinvalidPlateau()
+        {
+            Action action = () => new Rover(5, 5, CompassDirection.N, null);
+           
+
+            action.Should().Throw<ArgumentException>();
+        }
+
+
+        // Test Instruction
         [Test]
 
         public void TestWholeSequence()
         {
-            var rover = new Rover(0, 0, CompassDirection.N);
+            var rover = new Rover(0, 0, CompassDirection.N, new PlateauSize(5, 5));
             var instrcutions = new List<Instruction> { Instruction.M, Instruction.M, Instruction.R, Instruction.M, Instruction.L, Instruction.M };
 
             foreach (var instr in instrcutions)
@@ -110,6 +128,23 @@ namespace MarsRoverTests
             rover.Position.X.Should().Be(1);
             rover.Position.Y.Should().Be(3);
         }
+
+        public void TestEmptyInstruction()
+        {
+            var rover = new Rover(0, 0, CompassDirection.N, new PlateauSize(5, 5));
+            var instrcutions = new List<Instruction>();
+
+            foreach (var instr in instrcutions)
+            {
+                rover.Instructions(instr);
+            }
+
+            rover.Position.Facing.Should().Be(CompassDirection.N);
+            rover.Position.X.Should().Be(0);
+            rover.Position.Y.Should().Be(0);
+        }
+
+
 
 
     }

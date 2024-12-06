@@ -10,10 +10,12 @@ namespace MarsRover
     public class Rover
     {
        public Position Position { get; set; }
+        public PlateauSize PlateauSize { get; set; }
 
-        public Rover(int x, int y, CompassDirection facing)
+        public Rover(int x, int y, CompassDirection facing, PlateauSize plateauSize)
         {
             Position = new Position(x, y, facing);
+            PlateauSize = plateauSize;
         }
         private static readonly Dictionary<CompassDirection, CompassDirection> LeftRotationLogic = new Dictionary<CompassDirection, CompassDirection>
         {
@@ -47,16 +49,20 @@ namespace MarsRover
             switch (Position.Facing)
             {
                 case CompassDirection.N:
+                   if(Position.Y < PlateauSize.Y)
                     Position.Y += 1;
-                    break;
+                        break;
                 case CompassDirection.W:
-                    Position.X -= 1 ;
+                    if (Position.X > 0)
+                        Position.X -= 1 ;
                     break;
                 case CompassDirection.S:
-                    Position.Y -= 1;
+                    if (Position.Y > 0)
+                        Position.Y -= 1;
                     break;
                 case CompassDirection.E:
-                    Position.X += 1 ;
+                    if (Position.X < PlateauSize.X)
+                        Position.X += 1 ;
                     break;
             }
         }

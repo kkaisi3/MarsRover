@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MarsRoverTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d288467b75566d6acd01de7428e694a167e7628")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94e8661f451c6a2244a0221fe666db16d7888877")]
 [assembly: System.Reflection.AssemblyProductAttribute("MarsRoverTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MarsRoverTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

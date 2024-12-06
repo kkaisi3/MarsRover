@@ -70,9 +70,9 @@ namespace MarsRoverTests
         {
             string input = "LRMLAR4R";
 
-            Action act = () => InputParser.ParsingPlateau(input);
+            Action action = () => InputParser.ParsingPlateau(input);
 
-            act.Should().Throw<Exception>();
+            action.Should().Throw<Exception>();
         }
 
 
